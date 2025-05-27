@@ -12,10 +12,10 @@ export class UsuarioController {
         return this.usuarioService.getAll();
     }
 
-    // @Get(":nome")
-    // findByName(@Param('nome') nome: string ) {
-    //     return this.usuarioService.getByName();
-    // }
+    @Get(":nome")
+    findByName(@Param('nome') nome: string ) {
+        return this.usuarioService.getUser(nome);
+    }
 
     @Post()
     @HttpCode(HttpStatus.CREATED)
@@ -23,8 +23,9 @@ export class UsuarioController {
         return this.usuarioService.insertUser(req);
     }
 
-    // @Delete(":nome")
-    // deleteUser(@Body() req: Usuario) {
-    //     return this.usuarioService.insertUser(req);
-    // }
+    @Delete(":nome")
+    @HttpCode(HttpStatus.NO_CONTENT)
+    deleteUser(@Param('nome') nome: string) {
+        return this.usuarioService.deleteUser(nome);
+    }
 }
