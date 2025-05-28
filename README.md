@@ -1,6 +1,6 @@
 # Projeto de estudo de api development com nestJs
-### nome: Lucas Araujo da rocha
-### nome: Gabriel santos
+### Nome: Lucas Araujo da rocha Ra: 2502486
+### Nome: Gabriel santos Ra: 2502481
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
